@@ -14,3 +14,71 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+<!--
+git is a VCS, Version Control System
+
+Use one of the below commands to generate a key
+ cat ~/.ssh/id_ed255519.pub
+cat ~/.ssh/id_rsa.pub
+control C to exit previous command
+
+Use to generate a key. 
+ssh-keygen -t rsa -b 4096 -C "Andikolari627@gmail.com"
+
+ls lists the files in a directory. The directory containing our keys is ~/.ssh
+~ is th home directory
+ssh is a secure shell. Way for two systems to talk to eachother.
+
+command to get public key
+cat ~/.ssh/id_rsa.pub
+public key can be shared. Private key should never be shared, as it is what yoou use to decrypt what you encrypt with the public key. SHaring let's anyone encrypt your stuff
+Good to cycle keys.
+
+
+
+
+ssh -T git@github.com
+This command lets you connect to github
+
+
+
+
+git init will initialize an empty git repository
+directorys with a . infront of them are hidden files. Won't appear unless you request them
+
+
+
+git add to ad files to repository
+git add . will add every file, which is problematic. Don't do it
+
+creates a message when you git commit
+git commit -m "My first commit (Adding November11)"
+
+
+
+git status to see the staus
+git add to add a file
+git diff to see what is different between what is on your machine and what github has
+
+git log --oneline
+The log of individual changes
+use git show followed by the string to get what the commit looks like
+If you do it a second time, it shows you the new file
+
+
+This will commit to the chosen remote git repository
+
+
+
+git remote add origin git@github.com:AKolari/test-repo.git
+This will create the remote repository at the location. We usually call it origin
+
+git push origin master pushes the master branch to origin
+
+make repo names lowercase
+
+git pull origin master to pull master branch
+>>>>>>> 221be62cb9fa7ea7635023e2e2ef8366fd418d0d
